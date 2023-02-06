@@ -1,8 +1,220 @@
 @font-face {
-    font-family: 'Analisa';
+    font-family: "Analisa";
     src: url('AnalisaRegular.woff2') format('woff2'),
         url('AnalisaRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+:root {
+    --main-font-family: "Analisa";
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(227, 227, 238, 1) 0%, rgba(230, 246, 250, 1) 100%);
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+main {
+    background: white;
+    font-family: var(--main-font-family);
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #272044;
+    margin: 0;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2.2;
+    color: #272044;
+    opacity: 0.7;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.secondary {
+    background: #EEF0F2;
+}
+
+.secondary h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+.secondary h3 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.5;
+    color: #272044;
+    margin: 0;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background: white;
+    margin: 30px 0;
+}
+
+.card-body p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #272044;
+    opacity: 0.7;
+}
+
+.card-header.grid {
+    grid-gap: 0;
+}
+
+.card-header {
+    border-radius: none;
+    border-bottom: none;
+    background-color: white;
+    padding: 0;
+}
+
+.card-header img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+    background-color: white;
+    border-top: none;
+}
+
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+}
+
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+header {
+    background-image: linear-gradient(rgba(39, 32, 68, 0.6),
+            rgba(39, 32, 68, 0.6)), url(images/Taranto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 200px 0;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 15px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+}
+
+header h1 {
+    font-family: var(--main-font-family);
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+}
+
+header h2 {
+    font-family: var(--main-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.learn-more-btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    color: #272044;
+    padding: 16px 30px;
+}
+
+.learn-more-btn:hover {
+    background: #272044;
+    color: white;
+}
+
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #462cb3;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #462cb3;
+    color: white;
 }
