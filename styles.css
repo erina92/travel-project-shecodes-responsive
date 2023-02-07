@@ -296,3 +296,115 @@ footer p {
     line-height: 38px;
     font-size: 20px;
 }
+
+@media (max-width: 960px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    main h3 {
+        font-size: 35px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
+    }
+
+    .card-footer {
+        padding: 20px 0 0 0;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    main h2 {
+        font-size: 11px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+
+    main p {
+        font-size: 11px;
+    }
+
+    .secondary h2 {
+        font-size: 12.5px;
+    }
+
+    .secondary h3 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .third h2 {
+        font-size: 10px;
+    }
+
+    .third h3 {
+        font-size: 30px;
+    }
+
+    .grid-3-columns {
+        grid-gap: 20px;
+    }
+
+
+    .instagram-embeds {
+        position: relative;
+        padding-top: 0;
+        margin-top: 20px 0;
+    }
+
+    .responsive-iframe {
+        width: 355px;
+        height: 650px;
+        border: 1px solid black;
+    }
+
+    footer ul {
+        line-height: 35px;
+    }
+
+    footer li {
+        font-size: 13px;
+    }
+
+    .coder {
+        font-size: 12.5px;
+    }
+
+    .github {
+        font-size: 12.5px;
+    }
+}
