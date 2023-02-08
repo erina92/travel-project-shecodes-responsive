@@ -345,6 +345,7 @@ footer p {
 
     main h2 {
         font-size: 11px;
+        margin-top: 15px;
     }
 
     main h3 {
@@ -361,6 +362,10 @@ footer p {
 
     .secondary h3 {
         font-size: 35px;
+    }
+
+    .card-body p {
+        font-size: 13px;
     }
 
     section {
@@ -389,7 +394,8 @@ footer p {
     .responsive-iframe {
         width: 355px;
         height: 650px;
-        border: 1px solid black;
+        border: 2px solid grey;
+        border-style: dashed;
     }
 
     footer ul {
@@ -402,9 +408,63 @@ footer p {
 
     .coder {
         font-size: 12.5px;
+        line-height: 22px;
     }
 
     .github {
         font-size: 12.5px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    main h3 {
+        font-size: 35px;
+    }
+
+    main p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .secondary h2 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 20px;
+    }
+
+    .instagram-embeds {
+        position: relative;
+        padding-top: 0;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .responsive-iframe {
+        width: 500px;
+        height: 830px;
+        border: 2px solid grey;
+        border-style: dashed;
+    }
+
+    footer li {
+        font-size: 20px;
+    }
+
+    .coder {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .github {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
