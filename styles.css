@@ -297,13 +297,15 @@ footer p {
     font-size: 20px;
 }
 
-@media (max-width: 960px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     header {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     header h1 {
         font-size: 48px;
+        line-height: 1;
     }
 
     header h2 {
@@ -323,8 +325,12 @@ footer p {
         grid-gap: 0;
     }
 
+    .insta {
+        grid-gap: 30px;
+    }
+
     section {
-        padding: 30px;
+        padding: 18px;
     }
 
     .card-header img {
@@ -336,7 +342,7 @@ footer p {
     }
 
     .card-footer {
-        padding: 20px 0 0 0;
+        padding: 0;
     }
 
     .container {
@@ -354,6 +360,7 @@ footer p {
 
     main p {
         font-size: 11px;
+        line-height: 2;
     }
 
     .secondary h2 {
@@ -368,10 +375,6 @@ footer p {
         font-size: 13px;
     }
 
-    section {
-        padding: 30px;
-    }
-
     .third h2 {
         font-size: 10px;
     }
@@ -380,15 +383,10 @@ footer p {
         font-size: 30px;
     }
 
-    .grid-3-columns {
-        grid-gap: 20px;
-    }
-
-
     .instagram-embeds {
         position: relative;
         padding-top: 0;
-        margin-top: 20px 0;
+        margin: 20px 13.5px;
     }
 
     .responsive-iframe {
@@ -399,7 +397,7 @@ footer p {
     }
 
     footer ul {
-        line-height: 35px;
+        line-height: 30px;
     }
 
     footer li {
@@ -417,9 +415,276 @@ footer p {
     }
 }
 
-@media (max-width: 1024px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 425px) {
+    header {
+        padding: 50px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    main h3 {
+        font-size: 35px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .insta {
+        grid-gap: 30px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
+    }
+
+    .card-footer {
+        padding: 0;
+    }
+
+    .container {
+        padding: 0;
+    }
 
     main h2 {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+
+    main p {
+        font-size: 11px;
+        line-height: 2;
+    }
+
+    .secondary h2 {
+        font-size: 12.5px;
+    }
+
+    .secondary h3 {
+        font-size: 35px;
+    }
+
+    .card-body p {
+        font-size: 13px;
+    }
+
+    .third h2 {
+        font-size: 10px;
+    }
+
+    .third h3 {
+        font-size: 30px;
+    }
+
+    .instagram-embeds {
+        position: relative;
+        padding-top: 0;
+        margin: 20px 15px;
+    }
+
+    .responsive-iframe {
+        width: 355px;
+        height: 650px;
+    }
+
+    footer ul {
+        line-height: 30px;
+    }
+
+    footer li {
+        font-size: 13px;
+    }
+
+    .coder {
+        font-size: 12.5px;
+        line-height: 22px;
+    }
+
+    .github {
+        font-size: 12.5px;
+        line-height: 22px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header {
+        padding: 50px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    main h3 {
+        font-size: 35px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .insta {
+        grid-gap: 30px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section.secondary {
+        padding: 80px;
+    }
+
+    .btn {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
+    }
+
+    .card-footer {
+        padding: 0;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    main h2 {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .secondary h2 {
+        font-size: 12.5px;
+    }
+
+    .secondary h3 {
+        font-size: 35px;
+    }
+
+    .card-body p {
+        font-size: 13px;
+    }
+
+    .third h2 {
+        font-size: 30px;
+    }
+
+    .third h3 {
+        font-size: 40px;
+    }
+
+    .instagram-embeds .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .instagram-embeds {
+        position: relative;
+        padding-top: 0;
+        margin: 20px 15px;
+    }
+
+    .responsive-iframe {
+        width: 320px;
+        height: 600px;
+    }
+
+    footer ul {
+        line-height: 30px;
+    }
+
+    footer li {
+        font-size: 13px;
+    }
+
+    .coder {
+        font-size: 12.5px;
+        line-height: 22px;
+    }
+
+    .github {
+        font-size: 12.5px;
+        line-height: 22px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 50px 0;
+    }
+
+    header h1 {
+        font-size: 80px;
+        line-height: 1;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header h3 {
         font-size: 20px;
     }
 
@@ -427,44 +692,117 @@ footer p {
         font-size: 35px;
     }
 
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .insta {
+        grid-gap: 30px;
+    }
+
+    section {
+        padding: 45px;
+    }
+
+    section.secondary {
+        padding: 80px;
+    }
+
+    .btn {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
+    }
+
+    .card-footer {
+        padding: 0;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    main h2 {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 50px;
+    }
+
     main p {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 2;
     }
 
     .secondary h2 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .secondary h3 {
+        font-size: 50px;
     }
 
     .card-body p {
-        font-size: 20px;
+        font-size: 13px;
+    }
+
+    .third h2 {
+        font-size: 30px;
+    }
+
+    .third h3 {
+        font-size: 40px;
+    }
+
+    .instagram-embeds .grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .instagram-embeds {
         position: relative;
         padding-top: 0;
-        margin-top: 20px;
-        margin-left: 100px;
+        margin: 20px 15px;
     }
 
     .responsive-iframe {
-        width: 500px;
-        height: 830px;
-        border: 2px solid grey;
-        border-style: dashed;
+        width: 320px;
+        height: 600px;
+    }
+
+    footer ul {
+        line-height: 30px;
     }
 
     footer li {
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .coder {
-        font-size: 20px;
+        font-size: 12.5px;
         line-height: 22px;
     }
 
     .github {
-        font-size: 20px;
+        font-size: 12.5px;
         line-height: 22px;
     }
 }
