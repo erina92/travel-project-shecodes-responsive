@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1700px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -392,8 +392,6 @@ footer p {
     .responsive-iframe {
         width: 355px;
         height: 650px;
-        border: 2px solid grey;
-        border-style: dashed;
     }
 
     footer ul {
@@ -568,7 +566,7 @@ footer p {
     }
 
     section.secondary {
-        padding: 80px;
+        padding: 40px;
     }
 
     .btn {
@@ -576,8 +574,10 @@ footer p {
         display: inline-block;
     }
 
-    .card-header img {
-        display: none;
+    .card-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
     }
 
     .embed {
@@ -710,7 +710,7 @@ footer p {
     }
 
     .btn {
-        padding: 10px;
+        padding: 20px;
         display: inline-block;
     }
 
@@ -762,7 +762,7 @@ footer p {
     }
 
     .card-body p {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .third h2 {
@@ -780,12 +780,12 @@ footer p {
     .instagram-embeds {
         position: relative;
         padding-top: 0;
-        margin: 20px 15px;
+        margin: 20px 50px 0 50px;
     }
 
     .responsive-iframe {
-        width: 320px;
-        height: 600px;
+        width: 400px;
+        height: 700px;
     }
 
     footer ul {
@@ -804,5 +804,288 @@ footer p {
     .github {
         font-size: 12.5px;
         line-height: 22px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+        letter-spacing: 5px;
+        color: #272044;
+        opacity: 0.3;
+        text-transform: uppercase;
+    }
+
+    main h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        color: #272044;
+        margin: 0;
+    }
+
+    main p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 2.2;
+        color: #272044;
+        opacity: 0.7;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.secondary {
+        background: #EEF0F2;
+    }
+
+    .secondary h2 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 1.5;
+        margin: 0;
+        letter-spacing: 5px;
+        color: #272044;
+        opacity: 0.3;
+        text-transform: uppercase;
+    }
+
+    .secondary h3 {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 1.5;
+        color: #272044;
+        margin: 0;
+    }
+
+    .grid-3-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        background: white;
+        margin: 30px 0;
+    }
+
+    .card-body p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #272044;
+        opacity: 0.7;
+    }
+
+    .card-header.grid {
+        grid-gap: 0;
+    }
+
+    .card-header {
+        border-radius: none;
+        border-bottom: none;
+        background-color: white;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: fit-content;
+    }
+
+    .card-header img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .card-footer {
+        padding: 0 30px 30px;
+        background-color: white;
+        border-top: none;
+    }
+
+    .embed {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .img-responsive img {
+        width: 100%;
+        display: block;
+    }
+
+    section {
+        width: fit-content;
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 64px;
+    }
+
+    .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        background-image: linear-gradient(rgba(39, 32, 68, 0.6),
+                rgba(39, 32, 68, 0.6)), url(images/Taranto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding: 200px 0;
+    }
+
+    header h3 {
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 15px;
+        line-height: 36px;
+        text-transform: uppercase;
+        font-family: var(--main-font-family);
+    }
+
+    header h1 {
+        font-family: var(--main-font-family);
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 96px;
+    }
+
+    header h2 {
+        font-family: var(--main-font-family);
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .learn-more-btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: white;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        color: #272044;
+        padding: 16px 30px;
+    }
+
+    .learn-more-btn:hover {
+        background: #272044;
+        color: white;
+    }
+
+    .btn {
+        display: block;
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 16px;
+        background-color: #462cb3;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: #462cb3;
+        color: white;
+    }
+
+    .third h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0;
+        letter-spacing: 5px;
+        color: #272044;
+        opacity: 0.3;
+        text-transform: uppercase;
+    }
+
+    .third h3 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.5;
+        color: #272044;
+        margin: 0;
+    }
+
+    .instagram-embeds {
+        margin: 30px 20px 0 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .instagram-embeds .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-footer {
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    footer {
+        color: white;
+        background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url(images/cothedral.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer h3 {
+        font-family: var(--main-font-family);
+    }
+
+    footer ul {
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        line-height: 60px;
+    }
+
+    footer li {
+        font-size: 20px;
+        opacity: 0.7;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer p {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 25px;
+        opacity: 0.7;
+        text-align: justify;
+    }
+
+    .github a {
+        color: darkturquoise;
+    }
+
+    .github {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .coder {
+        line-height: 38px;
+        font-size: 20px;
     }
 }
