@@ -361,6 +361,10 @@ section.secondary {
   color: var(--text-muted);
 }
 
+.card-body h4 {
+  color: var(--text-heading);
+}
+
 .card-body h5 {
   color: var(--text-heading);
   font-size: 14px;
